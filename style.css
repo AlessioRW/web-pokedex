@@ -1,0 +1,96 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+.pokemon-text{
+    margin-top: 12px;
+    font-family: 'Press Start 2P';
+    color:rgb(217, 222, 222);
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(104, 104, 105);
+}
+
+main{
+    padding-left: 12vw;
+    padding-top: 10vh;
+
+
+    display: grid;
+    grid-template-columns: repeat(70,1vw);
+    grid-template-rows: repeat(80,1vh);
+}
+
+#sprite{
+    grid-column: 2/31;
+    grid-row: 7/55;
+}
+
+#name{
+    grid-row: 10/16;
+    grid-column: 37/68;
+}
+#name h2{
+    margin: 0px; margin-top: 10px;
+    font-size: 30px;
+}
+
+#type{
+    grid-row: 18/25;
+    grid-column: 32/68;
+}
+#type h2{
+    text-align: right;
+}
+
+#height{
+    grid-row: 42/47;
+    grid-column: 49/68;
+    text-align: center;
+}
+
+#weight{
+    grid-row: 49/54;
+    grid-column: 49/68;
+    text-align: center;
+}
+
+#input-box{
+    outline-style: solid;
+    outline-width: 4px;
+    grid-row: 63/71;
+    grid-column: 10/50;
+}
+#input-box input{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    margin: 0px; padding-left: 10px;
+    font-size: 30px;
+    outline: none;
+}
+
+#search-btn{
+    grid-row: 60/71;
+    grid-column: 51/64;
+}
+#search-btn button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#background{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+#background img{
+    height: 100%;
+    width: 100%;
+}
